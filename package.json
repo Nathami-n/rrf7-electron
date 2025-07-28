@@ -6,7 +6,7 @@
   "homepage": "./",
   "scripts": {
     "build": "react-router build",
-    "dev": "concurrently \"npm run react-dev\" \"wait-on http://localhost:5173 && npm run electron-dev\"",
+    "dev": "concurrently \"npm run react-dev\" \"wait-on http://localhost:5174 && npm run electron-dev\"",
     "react-dev": "react-router dev",
     "electron-dev": "electron .",
     "electron-build": "electron-builder",
@@ -28,9 +28,13 @@
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "concurrently": "^9.2.0",
+    "electron": "^37.2.4",
+    "electron-dev": "^1.0.1",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "wait-on": "^8.0.4"
   }
 }
